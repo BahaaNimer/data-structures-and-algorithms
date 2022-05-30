@@ -21,3 +21,7 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+## Link to the code cahllenge class 01 :
+
+[Whiteboard Workflow](./javascript/code_challenge_class01.md)
