@@ -5,3 +5,5 @@ Write a function called `reverseArray` which takes an array as an argument. With
 ## Whiteboard Workflow :
 
 ![Whiteboard Workflow](./whiteboard/reverseArray.jpg)
+
+## Approach & Efficiency
