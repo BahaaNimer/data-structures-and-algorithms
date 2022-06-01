@@ -24,4 +24,8 @@ To run your tests
 
 ## Link to the code cahllenge class 01 :
 
-[Whiteboard Workflow](./javascript/code_challenge_class01.md)
+[Whiteboard Workflow 01](./javascript/code_challenge_class01.md)
+
+## Link to the code cahllenge class 02 :
+
+[Whiteboard Workflow 02](./javascript/code-challenge02/code-challenge-class02.md)
