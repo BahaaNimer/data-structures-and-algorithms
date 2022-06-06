@@ -17,7 +17,11 @@ class LinkedList {
       this.head = newNode;
       this.tail = newNode;
     } else {
-      this.tail.next = newNode;
+      let tempNode = this.head;
+      while (tempNode.next) {
+        tempNode = tempNode.next;
+      }
+      tempNode.next = newNode;
       this.tail = newNode;
     }
     this.length++;
