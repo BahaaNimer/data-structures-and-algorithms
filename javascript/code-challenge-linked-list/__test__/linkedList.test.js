@@ -50,4 +50,58 @@ describe('Linked List Test', () => {
     linkedList.Insert('a');
     expect(linkedList.ToString()).toBe('B -> a -> h -> a -> a -> ');
   });
+  test('Can successfully add a node to the end of the linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    linkedList.Insert('a');
+    linkedList.Insert('a');
+    linkedList.append('d');
+    expect(linkedList.ToString()).toBe('B -> a -> h -> a -> a -> d -> ');
+  });
+  test('Can successfully add multiple nodes to the end of a linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    linkedList.Insert('a');
+    linkedList.Insert('a');
+    linkedList.append('d');
+    linkedList.append('e');
+    linkedList.append('f');
+    expect(linkedList.ToString()).toBe('B -> a -> h -> a -> a -> d -> e -> f -> ');
+  });
+  test('Can successfully insert a node before a node located in the middle of a linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    linkedList.insertBefore('a', 'c');
+    expect(linkedList.ToString()).toBe('B -> c -> a -> h -> ');
+  });
+  test('Can successfully insert a node before the first node of a linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    linkedList.insertBefore('B', 'c');
+    expect(linkedList.ToString()).toBe('c -> B -> a -> h -> ');
+  });
+  test('Can successfully insert after a node in the middle of the linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    linkedList.insertAfter('a', 'c');
+    expect(linkedList.ToString()).toBe('B -> a -> c -> h -> ');
+  });
+  test('Can successfully insert a node after the last node of the linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    linkedList.insertAfter('h', 'c');
+    expect(linkedList.ToString()).toBe('B -> a -> h -> c -> ');
+  });
 });
