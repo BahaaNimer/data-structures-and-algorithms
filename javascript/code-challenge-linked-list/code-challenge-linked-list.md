@@ -50,6 +50,13 @@ adds a new node with the given new value immediately after the first node that h
 
 - [x] Can successfully insert a node after the last node of the linked list.
 
+## Whiteboards
+
+![Append](./append%20LL.jpg)
+![Insert After](./insert%20after%20LL.jpg)
+
 ## Approach & Efficiency
 
-`big O(n)` Time & Space
+`big O(n)` Time & Space for append
+
+`big O(n)` Time & Space for insert after
