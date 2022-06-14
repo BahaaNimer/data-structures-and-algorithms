@@ -50,13 +50,40 @@ adds a new node with the given new value immediately after the first node that h
 
 - [x] Can successfully insert a node after the last node of the linked list.
 
+### Kth From End
+
+Find the kth node from the end of the list
+
+## Test for challenge 3
+
+- [x] Where k is greater than the length of the linked list.
+
+- [x] Where k and the length of the list are the same.
+
+- [x] Where k is not a positive integer.
+
+- [x] Where the linked list is of a size 1.
+
+- [x] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list.
+
 ## Whiteboards
 
+Append
+
 ![Append](./append%20LL.jpg)
+
+Insert After
+
 ![Insert After](./insert%20after%20LL.jpg)
+
+Kth From End
+
+![Kth From End](./kth%20from%20end%20LL.jpg)
 
 ## Approach & Efficiency
 
-`big O(n)` Time & Space for append
+`big O(n)` Time & `big O(1)` Space for append
 
-`big O(n)` Time & Space for insert after
+`big O(n)` Time & `big O(1)` Space for insert after
+
+`big O(n^2)` Time & `big O(1)` Space for kth from end

@@ -103,8 +103,27 @@ class LinkedList {
       currentNode = currentNode.next;
     }
   }
+  //find the kth node from the end of the list
+  kthFromEnd(k) {
+    let currentNode = this.head;
+    let count = 0;
+    while (currentNode) {
+      count++;
+      currentNode = currentNode.next;
+    }
+    if (k > count) {
+      return 'Exception';
+    }
+    if (k < 1) {
+      return 'Exception';
+    }
+    currentNode = this.head;
+    for (let i = 0; i < count - k; i++) {
+      currentNode = currentNode.next;
+    }
+    return currentNode.value;
+  }
 }
-
 let linkedList = new LinkedList();
 linkedList.Print();
 
