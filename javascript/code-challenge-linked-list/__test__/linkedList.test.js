@@ -104,4 +104,37 @@ describe('Linked List Test', () => {
     linkedList.insertAfter('h', 'c');
     expect(linkedList.ToString()).toBe('B -> a -> h -> c -> ');
   });
+  test('Where k is greater than the length of the linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    expect(linkedList.kthFromEnd(5)).toBe('Exception');
+  });
+  test('Where k and the length of the list are the same', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    expect(linkedList.kthFromEnd(3)).toBe('B');
+  });
+  test('Where k is not a positive integer', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    expect(linkedList.kthFromEnd(-1)).toBe('Exception');
+  });
+  test('Where the linked list is of a size 1', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    expect(linkedList.kthFromEnd(1)).toBe('B');
+  });
+  test('where k is not at the end, but somewhere in the middle of the linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.Insert('B');
+    linkedList.Insert('a');
+    linkedList.Insert('h');
+    expect(linkedList.kthFromEnd(2)).toBe('a');
+  });
 });
