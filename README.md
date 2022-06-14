@@ -22,10 +22,11 @@ To run your tests
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
-| Ref                                                    | Link                                                                                            |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| Link to the code cahllenge class 01 :                  | [Whiteboard Workflow 01](./javascript/code_challenge_class01.md)                                |
-| Link to the code cahllenge class 02 :                  | [Whiteboard Workflow 02](./javascript/code-challenge02/code-challenge-class02.md)               |
-| Link to the code challenge for Linked List :           | [Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md)            |
-| Link to the code challenge for Binary Search :         | [Binary Search](./javascript/code-challenge03/code-challenge03.md)                              |
-| Link to the code challenge for Extending Linked List : | [ Extending Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md) |
+| Ref                                                    | Link                                                                                           |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Link to the code cahllenge class 01 :                  | [Whiteboard Workflow 01](./javascript/code_challenge_class01.md)                               |
+| Link to the code cahllenge class 02 :                  | [Whiteboard Workflow 02](./javascript/code-challenge02/code-challenge-class02.md)              |
+| Link to the code challenge for Linked List :           | [Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md)           |
+| Link to the code challenge for Binary Search :         | [Binary Search](./javascript/code-challenge03/code-challenge03.md)                             |
+| Link to the code challenge for Extending Linked List : | [Extending Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md) |
+| Link to the code challenge for KTH Linked List :       | [KTH Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md)       |
