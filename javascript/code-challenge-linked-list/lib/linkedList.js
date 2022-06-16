@@ -8,21 +8,15 @@ class LinkedList {
     this.tail = null;
     this.length = 0;
   }
-  AddHead(value) {
-    this.head = new Node(value, this.head);
-  }
   Insert(value) {
     let newNode = new Node(value);
     if (this.head === null) {
       this.head = newNode;
       this.tail = newNode;
-    } else {
-      let tempNode = this.head;
-      while (tempNode.next) {
-        tempNode = tempNode.next;
-      }
-      tempNode.next = newNode;
-      this.tail = newNode;
+    }
+    else {
+      newNode.next = this.head;
+      this.head = newNode;
     }
     this.length++;
   }
