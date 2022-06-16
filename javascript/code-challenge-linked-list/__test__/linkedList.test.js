@@ -17,9 +17,7 @@ describe('Linked List Test', () => {
     linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
-    linkedList.Insert('a');
-    linkedList.Insert('a');
-    expect(linkedList.head.value).toBe('b');
+    expect(linkedList.head.value).toBe('h');
   });
   test('Can properly insert multiple nodes into the linked list', () => {
     let linkedList = new LinkedList();
@@ -43,26 +41,26 @@ describe('Linked List Test', () => {
   });
   test('Can properly return a collection of all the values that exist in the linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     linkedList.Insert('a');
     linkedList.Insert('a');
-    expect(linkedList.ToString()).toBe('B -> a -> h -> a -> a -> ');
+    expect(linkedList.ToString()).toBe('a -> a -> h -> a -> b -> ');
   });
   test('Can successfully add a node to the end of the linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     linkedList.Insert('a');
     linkedList.Insert('a');
     linkedList.append('d');
-    expect(linkedList.ToString()).toBe('B -> a -> h -> a -> a -> d -> ');
+    expect(linkedList.ToString()).toBe('a -> a -> h -> a -> b -> d -> ');
   });
   test('Can successfully add multiple nodes to the end of a linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     linkedList.Insert('a');
@@ -70,69 +68,69 @@ describe('Linked List Test', () => {
     linkedList.append('d');
     linkedList.append('e');
     linkedList.append('f');
-    expect(linkedList.ToString()).toBe('B -> a -> h -> a -> a -> d -> e -> f -> ');
+    expect(linkedList.ToString()).toBe('a -> a -> h -> a -> b -> d -> e -> f -> ');
   });
   test('Can successfully insert a node before a node located in the middle of a linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     linkedList.insertBefore('a', 'c');
-    expect(linkedList.ToString()).toBe('B -> c -> a -> h -> ');
+    expect(linkedList.ToString()).toBe('h -> c -> a -> b -> ');
   });
   test('Can successfully insert a node before the first node of a linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
-    linkedList.insertBefore('B', 'c');
-    expect(linkedList.ToString()).toBe('c -> B -> a -> h -> ');
+    linkedList.insertBefore('h', 'c');
+    expect(linkedList.ToString()).toBe('c -> h -> a -> b -> ');
   });
   test('Can successfully insert after a node in the middle of the linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     linkedList.insertAfter('a', 'c');
-    expect(linkedList.ToString()).toBe('B -> a -> c -> h -> ');
+    expect(linkedList.ToString()).toBe('h -> a -> c -> b -> ');
   });
   test('Can successfully insert a node after the last node of the linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
-    linkedList.insertAfter('h', 'c');
-    expect(linkedList.ToString()).toBe('B -> a -> h -> c -> ');
+    linkedList.insertAfter('b', 'c');
+    expect(linkedList.ToString()).toBe('h -> a -> b -> c -> ');
   });
   test('Where k is greater than the length of the linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     expect(linkedList.kthFromEnd(5)).toBe('Exception');
   });
   test('Where k and the length of the list are the same', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
-    expect(linkedList.kthFromEnd(3)).toBe('B');
+    expect(linkedList.kthFromEnd(3)).toBe('h');
   });
   test('Where k is not a positive integer', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     expect(linkedList.kthFromEnd(-1)).toBe('Exception');
   });
   test('Where the linked list is of a size 1', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
-    expect(linkedList.kthFromEnd(1)).toBe('B');
+    linkedList.Insert('b');
+    expect(linkedList.kthFromEnd(1)).toBe('b');
   });
   test('where k is not at the end, but somewhere in the middle of the linked list', () => {
     let linkedList = new LinkedList();
-    linkedList.Insert('B');
+    linkedList.Insert('b');
     linkedList.Insert('a');
     linkedList.Insert('h');
     expect(linkedList.kthFromEnd(2)).toBe('a');
