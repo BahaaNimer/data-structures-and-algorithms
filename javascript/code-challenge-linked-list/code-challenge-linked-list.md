@@ -36,6 +36,12 @@ adds a new node with the given new value immediately before the first node that 
 
 adds a new node with the given new value immediately after the first node that has the value specified
 
+### zip lists
+
+>arguments: list1, list2
+
+Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
+
 ## Test for Challenge 2
 
 - [x] Can successfully add a node to the end of the linked list.
