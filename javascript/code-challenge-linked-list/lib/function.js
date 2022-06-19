@@ -1,4 +1,4 @@
-//Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list
+//Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
 const LinkedList = require('./linkedList');
 
 function zipLists(list1, list2) {
@@ -6,11 +6,11 @@ function zipLists(list1, list2) {
   let currentNode2 = list2.head;
   let newList = new LinkedList();
   while (currentNode1 !== null || currentNode2 !== null) {
-    if(currentNode1 !== null) {
+    if (currentNode1 !== null) {
       newList.append(currentNode1.value);
       currentNode1 = currentNode1.next;
     }
-    if(currentNode2 !== null) {
+    if (currentNode2 !== null) {
       newList.append(currentNode2.value);
       currentNode2 = currentNode2.next;
     }
