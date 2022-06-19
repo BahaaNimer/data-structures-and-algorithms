@@ -30,3 +30,4 @@ To run your tests
 | Link to the code challenge for Binary Search :         | [Binary Search](./javascript/code-challenge03/code-challenge03.md)                             |
 | Link to the code challenge for Extending Linked List : | [Extending Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md) |
 | Link to the code challenge for KTH Linked List :       | [KTH Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md)       |
+| Link to the code challenge for Zip Lists :             | [Zip Lists](./javascript/code-challenge-linked-list/code-challenge-linked-list.md)             |

@@ -1,6 +1,7 @@
 /* eslint-disable new-cap */
 'use strict';
 const LinkedList = require('../lib/linkedList');
+const zipLists = require('../lib/function');
 
 describe('Linked List Test', () => {
   test('Can successfully instantiate an empty linked list', () => {
@@ -134,5 +135,43 @@ describe('Linked List Test', () => {
     linkedList.Insert('a');
     linkedList.Insert('h');
     expect(linkedList.kthFromEnd(2)).toBe('a');
+  });
+  test('Zip the two linked lists together', () => {
+    let linkedList1 = new LinkedList();
+    linkedList1.Insert('b');
+    linkedList1.Insert('a');
+    linkedList1.Insert('h');
+    let linkedList2 = new LinkedList();
+    linkedList2.Insert('d');
+    linkedList2.Insert('e');
+    linkedList2.Insert('f');
+    let newList = zipLists(linkedList1, linkedList2);
+    expect(newList.ToString()).toBe('h -> f -> a -> e -> b -> d -> ');
+  });
+  test('Zip the two linked lists together, list2 had one more node', () => {
+    let linkedList1 = new LinkedList();
+    linkedList1.Insert('b');
+    linkedList1.Insert('a');
+    linkedList1.Insert('h');
+    let linkedList2 = new LinkedList();
+    linkedList2.Insert('d');
+    linkedList2.Insert('e');
+    linkedList2.Insert('f');
+    linkedList2.Insert('g');
+    let newList = zipLists(linkedList1, linkedList2);
+    expect(newList.ToString()).toBe('h -> g -> a -> f -> b -> e -> d -> ');
+  });
+  test('Zip the two linked lists together, list1 had one more node', () => {
+    let linkedList1 = new LinkedList();
+    linkedList1.Insert('b');
+    linkedList1.Insert('a');
+    linkedList1.Insert('h');
+    linkedList1.Insert('z');
+    let linkedList2 = new LinkedList();
+    linkedList2.Insert('d');
+    linkedList2.Insert('e');
+    linkedList2.Insert('f');
+    let newList = zipLists(linkedList1, linkedList2);
+    expect(newList.ToString()).toBe('z -> f -> h -> e -> a -> d -> b -> ');
   });
 });

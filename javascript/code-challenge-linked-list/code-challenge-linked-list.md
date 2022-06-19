@@ -66,19 +66,31 @@ Find the kth node from the end of the list
 
 - [x] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list.
 
+## Test for challenge 4
+
+- [x] Zip the two linked lists together.
+
+- [x] Zip the two linked lists together, list2 had one more node.
+
+- [x] Zip the two linked lists together, list1 had one more node.
+
 ## Whiteboards
 
 Append
 
-![Append](./append%20LL.jpg)
+![Append](./asset/append%20LL.jpg)
 
 Insert After
 
-![Insert After](./insert%20after%20LL.jpg)
+![Insert After](./asset/insert%20after%20LL.jpg)
 
 Kth From End
 
-![Kth From End](./kth%20from%20end%20LL.jpg)
+![Kth From End](./asset/kth%20from%20end%20LL.jpg)
+
+Zip Lists
+
+![Zip Lists](./asset/zipList.jpg)
 
 ## Approach & Efficiency
 
@@ -87,3 +99,5 @@ Kth From End
 `big O(n)` Time & `big O(1)` Space for insert after
 
 `big O(n^2)` Time & `big O(1)` Space for kth from end
+
+`big O(n)` Time & `big O(1)` Space for zip lists
