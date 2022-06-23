@@ -29,11 +29,11 @@ Challenge Type: Code Challenge / Algorithm
 
 ## Write tests to prove the following functionality:
 
-- [x] Can successfully enqueue into a queue
-- [x] Can successfully enqueue multiple values into a queue
-- [x] Can successfully empty a queue after multiple dequeues
-- [x] Can successfully instantiate an empty queue
-- [x] Calling dequeue or peek on empty queue raises exception
+- [x] Can successfully enqueue into a queue.
+- [x] Can successfully enqueue multiple values into a queue.
+- [x] Can successfully empty a queue after multiple dequeues.
+- [x] Can successfully instantiate an empty queue.
+- [x] Calling dequeue or peek on empty queue raises exception.
 
 ## Whiteboard Process
 
