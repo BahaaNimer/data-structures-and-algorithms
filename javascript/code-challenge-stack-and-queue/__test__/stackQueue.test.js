@@ -65,7 +65,7 @@ describe('Stack and Queue test', () => {
     queue.enqueue(1);
     expect(queue.front.value).toBe(1);
   });
-  it('Can successfully enqueue multiple values into a queueCan successfully enqueue multiple values into a queue', () => {
+  it('Can successfully enqueue multiple values into a queue', () => {
     let queue = new Queue();
     queue.enqueue(1);
     queue.enqueue(2);
