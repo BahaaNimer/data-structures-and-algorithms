@@ -42,9 +42,9 @@ The shelter operates using a first-in, first-out approach.
 
 I used the `Node` approach but we can use `Array`
 
-The big O => `O(1)` time
+The big O => `O(1)` time.
 
-The big O => `O(n)` space
+The big O => `O(n)` space.
 
 ## Solution
 
