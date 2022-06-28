@@ -34,3 +34,4 @@ To run your tests
 | Link to the code challenge for Stack and Queue :       | [Stack and Queue](./javascript/code-challenge-stack-and-queue/stack-and-queue.md)              |
 | Link to the code challenge for Pseudo Queue :          | [Pseudo Queue](./javascript/code-challenge-stack-queue-pseudo/stack-queue-pseudo.md)           |
 | Link to the code challenge for Animal Shelter :        | [Animal Shelter](./javascript/code-challenge-animal/animal.md)                                 |
+| Link to the code challenge for Brackets Validation :   | [Brackets Validation](./javascript/code-challenge-brackets/brackets.md)                        |
