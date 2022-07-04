@@ -44,7 +44,7 @@ let BTS = new BinaryTreeSearch();
 BTS.Add(10);
 BTS.Add(11);
 BTS.Add(5);
-BTS.Add(13);
+BTS.Add(12);
 BTS.Add(13);
 BTS.Add(6);
 BTS.Add(15);
@@ -52,3 +52,8 @@ BTS.Add(15);
 console.log(BTS.Contains(6));
 console.log(BTS.Contains(15));
 console.log(BTS.Contains(20));
+
+console.log('====================================');
+console.log(tree.Max());
+console.log(BTS.Max());
+console.log('====================================');
