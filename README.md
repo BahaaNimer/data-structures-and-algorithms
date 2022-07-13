@@ -38,3 +38,4 @@ To run your tests
 | Link to the code challenge for Binary Tree :            | [Binary Tree](./javascript/code-challenge-trees/trees.md)                                      |
 | Link to the code challenge for the max in Binary Tree : | [Max Binary Tree](./javascript/code-challenge-trees/tree-max.md)                               |
 | Link to the code challenge for the Breadth First :      | [Breadth First](./javascript/code-challenge-tree-breadth-first/tree-breadth-first.md)          |
+| Link to the code challenge for the FizzBuzz :           | [FizzBuzz](./javascript/code-challenge-k-ary/fizzbuzz.md)                                      |
