@@ -40,3 +40,4 @@ To run your tests
 | Link to the code challenge for the Breadth First :      | [Breadth First](./javascript/code-challenge-tree-breadth-first/tree-breadth-first.md)          |
 | Link to the code challenge for the FizzBuzz :           | [FizzBuzz](./javascript/code-challenge-k-ary/fizzbuzz.md)                                      |
 | Link to the code challenge for the Insertion sort :     | [Insertion sort](./javascript/code-challenge-sorting/insertionSort.md)                         |
+| Link to the code challenge for the Merge sort :         | [Merge sort](./javascript/code-challenge-mergeSort/merge-sorting.md)                           |
