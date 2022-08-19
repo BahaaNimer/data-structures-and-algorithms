@@ -24,8 +24,8 @@ To run your tests
 
 | Ref                                                     | Link                                                                                           |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Link to the code cahllenge class 01 :                   | [Whiteboard Workflow 01](./javascript/code_challenge_class01.md)                               |
-| Link to the code cahllenge class 02 :                   | [Whiteboard Workflow 02](./javascript/code-challenge02/code-challenge-class02.md)              |
+| Link to the code challenge class 01 :                   | [Whiteboard Workflow 01](./javascript/code_challenge_class01.md)                               |
+| Link to the code challenge class 02 :                   | [Whiteboard Workflow 02](./javascript/code-challenge02/code-challenge-class02.md)              |
 | Link to the code challenge for Linked List :            | [Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md)           |
 | Link to the code challenge for Binary Search :          | [Binary Search](./javascript/code-challenge03/code-challenge03.md)                             |
 | Link to the code challenge for Extending Linked List :  | [Extending Linked List](./javascript/code-challenge-linked-list/code-challenge-linked-list.md) |
@@ -42,3 +42,4 @@ To run your tests
 | Link to the code challenge for the Insertion sort :     | [Insertion sort](./javascript/code-challenge-sorting/insertionSort.md)                         |
 | Link to the code challenge for the Merge sort :         | [Merge sort](./javascript/code-challenge-mergeSort/merge-sorting.md)                           |
 | Link to the code challenge for the Quick sort :         | [Quick sort](./javascript/code-challenge-quickSort/quickSort.md)                               |
+| Link to the code challenge for the Hash Table :         | [Hash Table](./javascript/code-challenge-hashtable/hashTable.md)                               |
