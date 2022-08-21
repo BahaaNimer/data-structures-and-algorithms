@@ -28,6 +28,8 @@ Implement a Hashtable Class with LinkedList
 
 ✓ Successfully hash a key to an in-range value.
 
+✓ Successfully return the first repeated word from a string.
+
 ## Approach & Efficiency
 
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -35,6 +37,12 @@ Implement a Hashtable Class with LinkedList
 I used `hashtable` with `linkedList` approach
 
 The big O => `O(1)` time.
+
+The big O => `O(n)` space.
+
+For the `Function`:
+
+The big O => `O(n)` time.
 
 The big O => `O(n)` space.
 
@@ -56,5 +64,10 @@ The big O => `O(n)` space.
 - keys
   - Returns: Collection of keys
 - hash
+
   - Arguments: key
   - Returns: Index in the collection for that key
+
+- function called `firstRepeatingWord` that finds the first word to occur more than once in a string
+  - Arguments: string
+  - Return: string
