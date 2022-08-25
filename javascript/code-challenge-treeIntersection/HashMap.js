@@ -6,43 +6,34 @@ class HashMap {
     this.table = new Array(size);
   }
   hash(key) {
-    const hashKey = key.split("").reduce((acc, cur) => {
-      return acc + cur.charCodeAt(0);
-    }, 0);
-    const multiPrime = hashKey * 599;
-    const hashedKey = multiPrime % this.size;
-    // console.log('hashedKey :>>', hashedKey)
-    return hashedKey;
+    let total = 0;
+    for (let i = 0; i < key.length; i++) {
+      total += key.charCodeAt(i);
+    }
+    return total % this.size;
   }
   set(key, value) {
     let index = this.hash(key);
     if (!this.table[index]) {
       this.table[index] = new LinkedList();
     }
-    this.table[index].append({ [key]: value });
-  }
-  get(key) {
-    let index = this.hash(key);
-    if (!this.table[index]) {
-      return null;
-    }
-    return this.table[index].values();
+    this.table[index].append({
+      [key]: value
+    });
   }
   contains(key) {
-    let index = this.hash(key);
-    if (!this.table[index]) {
+    const hash = this.hash(key);
+    if (this.table[hash]) {
+      let currentNode = this.table[hash].head;
+      while (currentNode) {
+        if (currentNode.value[key]) {
+          return true;
+        }
+        currentNode = currentNode.next;
+      }
+    } else {
       return false;
     }
-    return true;
-  }
-  keys() {
-    let keys = [];
-    for (let i = 0; i < this.table.length; i++) {
-      if (this.table[i]) {
-        keys.push(this.table[i].keys());
-      }
-    }
-    return keys;
   }
 }
 

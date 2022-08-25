@@ -22,25 +22,6 @@ class LinkedList {
     }
     current.next = node;
   }
-  // returning the all the values  from the linkedList
-  values() {
-    let values = [];
-    let current = this.head;
-    while (current) {
-      values.push(current.value);
-      current = current.next;
-    }
-    return values;
-  }
-  keys() {
-    let values = [];
-    let current = this.head;
-    while (current) {
-      values.push([Object.keys(current.value)[0]]);
-      current = current.next;
-    }
-    return values;
-  }
 }
 
 module.exports = LinkedList;

@@ -50,7 +50,7 @@ let treeTwo = tree2.PreOrder();
 // console.log('tree', tree)
 // console.log('tree2', tree2)
 
-// console.log('treeOne :>> ', treeOne);
-// console.log('treeTwo :>> ', treeTwo);
+console.log('treeOne :>> ', treeOne);
+console.log('treeTwo :>> ', treeTwo);
 
-TreeIntersection(treeOne, treeTwo);
+console.log('Result :>>', TreeIntersection(treeOne, treeTwo));
