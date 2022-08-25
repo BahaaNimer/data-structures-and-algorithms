@@ -30,6 +30,10 @@ Implement a Hashtable Class with LinkedList
 
 ✓ Successfully return the first repeated word from a string.
 
+## whiteboard
+
+![whiteboard](./assets/whiteboard-repeated.jpg)
+
 ## Approach & Efficiency
 
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
