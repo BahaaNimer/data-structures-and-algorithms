@@ -44,3 +44,4 @@ To run your tests
 | Link to the code challenge for the Quick sort :         | [Quick sort](./javascript/code-challenge-quickSort/quickSort.md)                               |
 | Link to the code challenge for the Hash Table :         | [Hash Table](./javascript/code-challenge-hashtable/hashTable.md)                               |
 | Link to the code challenge for the Tree Intersection :  | [Tree Intersection](./javascript/code-challenge-treeIntersection/treeIntersection.md)          |
+| Link to the code challenge for the Left Join :          | [Left Join](./javascript/code-challenge-leftJoin/left-join.md)                                 |
