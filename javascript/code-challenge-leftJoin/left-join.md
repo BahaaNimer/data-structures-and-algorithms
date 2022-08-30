@@ -18,6 +18,14 @@ The second parameter is a hashmap that has word strings as keys, and antonyms of
 
 Return: The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
 
+## Write tests to prove the following functionality:
+
+✓ should create a left join.
+
+✓ should create a left join with or without existing right join.
+
+✓ should create a left join without a right join.
+
 ## WhiteBoard
 
 ![whiteboard](./assets/whiteboard.jpg)
